@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@font-face {
+  src: url("../font/Alien\ Energy\ Italic.ttf");
+  font-family: alien;
+}
+
+* {
+  font-family: alien;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply overflow-x-hidden pb-20;
+}
+
+.navbar-nav {
+  @apply -left-[30rem] tablet:left-auto;
+}
+
+.active {
+  @apply left-0;
+}
+
+.nav-link a {
+  @apply transition-all  before:transition-all relative before:absolute before:-bottom-[1rem] before:w-0 before:h-[4px] hover:before:w-full before:bg-green hover:text-green;
+}
+
+.bg-hero-item {
+  background: url("./img/macbook.png");
+}
+
+@media (min-width: 1190px) {
+  header {
+    @apply h-[55rem];
+  }
+}
+
+@media (max-width: 1189px) {
+  header {
+    @apply h-[50rem];
+  }
+}
+
+@media (max-width: 982px) {
+  header {
+    @apply h-[48rem];
+  }
+}
+
+@media (max-width: 895px) {
+  header {
+    @apply h-[46rem];
+  }
+}
+
+@media (max-width: 815px) {
+  header {
+    @apply h-[44rem];
+  }
+}
+
+@media (max-width: 723px) {
+  header {
+    @apply h-[42rem];
+  }
+}
+
+@media (max-width: 643px) {
+  header {
+    @apply h-[38rem];
+  }
+}
+
+@media (max-width: 627px) {
+  header {
+    @apply h-[36rem];
+  }
+}
+
+@media (max-width: 535px) {
+  header {
+    @apply h-[34rem];
+  }
+}
+
+@media (max-width: 367px) {
+  .nav-logo img {
+    @apply w-[10rem];
+  }
+}
+
+@media (max-width: 358px) {
+  header {
+    @apply h-[28rem];
+  }
+
+  .title-hero {
+    @apply text-[18px];
+  }
+}
